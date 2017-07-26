@@ -1,3 +1,96 @@
 page-home {
 
+	
+}
+
+#comet {
+
+// width: 50%;
+// height:30%;
+// text-align: center;
+// margin: auto;
+// vertical-align: middle;
+// align-self: center;
+// position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         margin-right: -50%;
+//         transform: translate(-50%, -100%)
+width: 40%;
+display: block;
+margin: auto;
+
+	
+ 
+}
+#bb {
+border-block-end-color: #08ABfc;
+	color: white;
+	font-family: "ROBOTO";
+	font-size: 32px;
+	text-align: center;
+	font-weight: 100;
+}
+#english{
+	background-color: transparent;
+	color: #06c9f7;
+	font-size: 16px;
+	text-align: center;
+	width:100px;
+	font-family: "ROBOTO";
+	
+}
+
+#home-butts{
+display: inline;
+margin:auto;
+width: 100%;
+margin-left: 50px;
+}
+#dd{
+	color: white;
+	font-size: 50px;
+	font-family:'Roboto';
+
+}
+#ll{
+	color: #06c9f7;
+	
+}
+#custom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000;
+  width:100%;
+  background-color: #002a3e;
+}
+
+.flb {
+  background-color: #3ebffb;
+  height:100%;
+  width:100%;
+  animation: pulse 1s linear forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  max-width: 50%;
+}
+.Aligner-item--top {
+  align-self: flex-start;
+}
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+#custom-overlay img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  animation: animation 3100ms linear infinite both;
+  animation-delay: 1s;
 }

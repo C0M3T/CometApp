@@ -1,11 +1,79 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+
+    
+  
+
+
+
+<ion-header id="header"><ion-navbar><ion-title>Nearby laundromats</ion-title></ion-navbar>
 </ion-header>
+<ion-content>
+<ion-slides id="uio" pager loop>
 
-<ion-content padding>
+  <ion-slide style="background-color: gray">
+    <h2>{{places[0].name}}</h2>
+    <h2 id="tt">{{places[0].vicinity}}</h2>
+    
 
+  </ion-slide>
+
+  <ion-slide style="background-color: gray">
+    <h2>{{places[1].name}}</h2>
+       <h2 id="tt">{{places[0].vicinity}}</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: gray">
+    <h2>{{places[2].name}}</h2>
+       <h2 id="tt">{{places[0].vicinity}}</h2>
+  </ion-slide>
+
+</ion-slides>
+
+  
+    <ion-card id="card"   *ngFor="let place of places" (click)="load()"  >
+    <!-- <img src="{{place.photos[0].getUrl({'maxWidth': 200, 'maxHeight':200})}}">    -->
+
+
+ 
+  <!-- <img src=""> -->
+  <!-- <ion-fab right top>
+    <button ion-fab>
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab> -->
+
+  <!-- <ion-item>
+    <ion-icon name="football" item-start large><ion-icon>
+   
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="wine" item-left large ></ion-icon>
+   
+  </ion-item> -->
+
+  <!-- <ion-item>
+   
+    <! <button *ngFor="let place of places"> -->
+      <!-- <ion-icon name=""></ion-icon> -->
+      <!-- Start -->
+    <!-- </button> -->
+  <!-- </ion-item> --> 
+<p id="migy">{{place.name}}</p>
+<p id="gkg">{{place.vicinity}}</p>
+<p>{{place.location}}</p>
+<!-- <p id="qee">{{place.}} -->
+
+
+</ion-card>
+  <div #map id="map"></div>
+  
+       <div style="width : 100% ;height: 60%">
+           
+    <!-- <ion-list> -->
+    <!--  <ion-item *ngFor="let place of places"> 
+        <p>{{place.name}}</p> -->
+        
+    <!-- </ion-item> -->
+    <!-- </ion-list> -->
+</div>
 </ion-content>
