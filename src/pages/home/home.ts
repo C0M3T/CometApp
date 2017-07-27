@@ -9,8 +9,15 @@ import { AboutPage} from '../about/about';
 })
 export class HomePage {
 tabBarElement: any;
+splash=true; 
   constructor(public navCtrl: NavController) {
-    
+   
+  }
+  ionViewDidLoad(){
+    setTimeout(()=> {
+      this.splash =false;
+    },4000);
+
   }
   load(){
    	this.navCtrl.push(AboutPage, {

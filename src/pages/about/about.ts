@@ -16,12 +16,17 @@ export class AboutPage {
 options : GeolocationOptions;
 currentPos : Geoposition;
 places : Array<any> ; 
+splash=true; 
 @ViewChild('map') mapElement: ElementRef;
 map: any;
   constructor(public navCtrl: NavController,private geolocation : Geolocation)  {
     this.places = [{name:"",vicinity:"",},{name:"",vicinity:""},{name:"",vicinity:""}]
   }
-    ionViewDidLoad(){
+  
+    ionViewDidLoad(){ 
+    setTimeout(()=> {
+      this.splash =false;
+    },4000);
     this.getUserPosition();
 }   
   addMap(lat,long){

@@ -3,13 +3,21 @@
   
 
 
-
-<ion-header id="header"><ion-navbar><ion-title>Nearby laundromats</ion-title></ion-navbar>
-</ion-header>
-<ion-content>
+<div style= " background-image:url('assets/img/oo.png')"></div>
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img id="ss" src="assets/img/Comet.png">
+    <div><h1 id="dddd" style="font-family:'Roboto'"><i>Comet</i></h1>
+      <div  id="kkkk"><i>Reserve Your Laundry Machine</i></div> </div>
+    <div class="Aligner-item Aligner-item--bottom"></div>
+    
+  </div>
+</div>
+<ion-content padding>
 <ion-slides id="uio" pager loop>
 
-  <ion-slide style="background-color: gray">
+   <ion-slide style="background-color: gray">
     <h2>{{places[0].name}}</h2>
     <h2 id="tt">{{places[0].vicinity}}</h2>
     
@@ -26,11 +34,12 @@
        <h2 id="tt">{{places[0].vicinity}}</h2>
   </ion-slide>
 
-</ion-slides>
+</ion-slides> 
 
+<h4 id="gg">Nearby laundromats</h4>
   
     <ion-card id="card"   *ngFor="let place of places" (click)="load()"  >
-    <!-- <img src="{{place.photos[0].getUrl({'maxWidth': 200, 'maxHeight':200})}}">    -->
+     <!-- <img src="{{place.photos[0].getUrl({'maxWidth': 200, 'maxHeight':200})}}">     -->
 
 
  
@@ -60,7 +69,7 @@
   <!-- </ion-item> --> 
 <p id="migy">{{place.name}}</p>
 <p id="gkg">{{place.vicinity}}</p>
-<p>{{place.location}}</p>
+
 <!-- <p id="qee">{{place.}} -->
 
 
