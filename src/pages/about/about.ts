@@ -26,7 +26,7 @@ map: any;
     ionViewDidLoad(){ 
     setTimeout(()=> {
       this.splash =false;
-    },4000);
+    },2000);
     this.getUserPosition();
 }   
   addMap(lat,long){
