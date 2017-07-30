@@ -1,7 +1,7 @@
 import { Component, ViewChild ,ElementRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { MachinePage} from '../machine/machine';
-import { InfoPage} from '../info/info';
+import { SettingsPage} from '../settings/settings';
 import { Geolocation ,GeolocationOptions ,Geoposition ,PositionError } from '@ionic-native/geolocation';
 
 declare var google;
@@ -96,7 +96,7 @@ map: any;
   }
   
 load1(){
-   	this.navCtrl.push(InfoPage, {
+   	this.navCtrl.push(SettingsPage, {
    		val:'anishnirmal'
    	})
 }

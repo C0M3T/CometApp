@@ -10,7 +10,7 @@
    </ion-navbar> 
 </ion-header>
 <ion-content>
-  <ion-slides class="wrapper" loop="true"  slidesPerView="2">  
+  <ion-slides class="wrapper" loop="true"  slidesPerView="1">  
   <ion-slide style="background-color:#e0e0e0">
       <img id="begin" src="assets/img/bluewasher.png">
   
@@ -71,16 +71,27 @@
 
 </ion-slides>
 
-
-
-   <ion-item> 
-  <ion-label >Start</ion-label>
+<br>
+<br>
+  <ion-item>  
+  <ion-label ion-button round outline id="start">START TIME</ion-label>
     <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myStart"></ion-datetime>  
+ </ion-item> 
+ <!-- <ion-item> -->
+   <br>
+    
+<ion-item>
+       <ion-label>Type of cycle setting</ion-label>
+  <ion-select  [(ngModel)]="dryer">
+    <ion-option  value=s>7-8lbs</ion-option>
+    <ion-option  value=m>12-15lbs</ion-option>
+    <ion-option  value=l>16-18lbs</ion-option>
+     </ion-select>
 </ion-item>
- <ion-item>
-  <ion-label>End</ion-label>
-  <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myEnd"></ion-datetime> 
-</ion-item>  
+ 
+ <!-- </ion-item> -->
+  <!-- <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myEnd"></ion-datetime> 
+</ion-item>   -->
 <!-- <button ion-button secondary (click)="load()">Reserve</button> -->
 
 </ion-content>

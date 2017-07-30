@@ -1,1 +1,19 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+<ion-header>
+</ion-header>
+<ion-content padding>
+<ion-item (click)="load8()">Reserved Machine</ion-item>
+    <ion-item (click)="load9()">Payment Method</ion-item>
+     <ion-item >Language</ion-item>
+      <ion-item >Terms&Agreement</ion-item> 
+      <ion-item >Report A Problem</ion-item>
+
+
+<!-- <ion-item(click)="load9()">Payment Method</i>
+<button ion-button secondary (click)="load9()">Payment Method</button>
+</ion-item> -->
+</ion-content>
+</ion-menu>
+
+
+<ion-nav #content [root]="rootPage"></ion-nav>

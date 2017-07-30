@@ -13,8 +13,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { HttpModule } from '@angular/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { Geolocation } from '@ionic-native/geolocation';
-// import { ConnectivityProvider } from '../providers/connectivity/connectivity';
+import { Geolocation } from '@ionic-native/geolocation'
+import{ NumericModule} from 'ionic2-numericpicker';
+// import { ConnectivityProvider } from '../provders/connectivity/connectivity';
 // import { GoogleMapsProvider } from '../providers/google-maps/google-maps';
 // import { LocationsProvider } from '../providers/locations/locations';
 // import { MapPage } from '../pages/map/map';
@@ -34,6 +35,7 @@ import { Geolocation } from '@ionic-native/geolocation';
   imports: [
     BrowserModule,
     HttpModule,
+    NumericModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

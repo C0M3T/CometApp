@@ -13,7 +13,16 @@
     <div class="Aligner-item Aligner-item--bottom"></div>
     
   </div>
-</div> -->
+</div> 
+<ion-header>
+   <ion-navbar color="main">
+  <!-- <ion-buttons start> -->
+    <button ion-button icon-only menuToggle>
+ <ion-icon name="menu"></ion-icon>
+  </button> 
+ <!-- </ion-buttons> -->
+</ion-navbar>
+</ion-header>
 <ion-content padding>
 <ion-slides id="uio" pager loop>
 
@@ -38,8 +47,8 @@
 
 <h4 id="gg">Nearby laundromats</h4>
   
-    <ion-card id="card"   *ngFor="let place of places" (click)="load()"  >
-     <!-- <img src="{{place.photos[0].getUrl({'maxWidth': 200, 'maxHeight':200})}}">     -->
+    <ion-card id="card"   *ngFor="let place of places" (click)="load()" >
+      <!-- <img src="{{place.photos[0].getUrl({'maxWidth': 200, 'maxHeight':200})}}">      -->
 
 
  

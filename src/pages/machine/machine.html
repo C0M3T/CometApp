@@ -6,11 +6,12 @@
 -->
 <ion-header>
 
-   <ion-navbar color="main">
+  <ion-navbar>
+    
      {{title}}
     <button ion-button secondary (click)="load()" class="start">start</button> 
+ 
   </ion-navbar>
-
 </ion-header>
 
 
@@ -18,11 +19,29 @@
 <!-- <h5>In use </h5>
 <h5>Free</h5> -->
  <div class="abs">
-<img src="assets/img/icons.png">
+<!-- <img src="assets/img/icons.png"> -->
 </div> 
-<h1>Washers</h1>
-<h5>select machine</h5>
-<ion-grid>
+<br>
+
+<h1 id="ffff">Washers</h1>
+<br>
+<br>
+
+  
+  <ion-item>
+    <ion-label>Slected</ion-label>
+  <ion-select [(ngModel)]="washer">
+    <ion-option value=0>0</ion-option>
+    <ion-option value=1>1</ion-option>
+    <ion-option value=2>2</ion-option>
+    <ion-option value=3>3</ion-option>
+    <ion-option value=4>4</ion-option>
+    <ion-option value=5>5</ion-option>
+    </ion-select>
+</ion-item>
+
+
+<!-- <ion-grid>
   <ion-row>
     <ion-col col-sm-4><img class="washer" src="assets/img/bluewasher.png"></ion-col>
     <ion-col col-sm-4><img class="washer" src="assets/img/bluewasher.png"></ion-col>
@@ -41,11 +60,32 @@
     
    </ion-row>
  <div class="rowBorder"></div>
-</ion-grid>
+</ion-grid> -->
  
-<h1>Dryers</h1>
-<h5>select machine</h5>
-<ion-grid>
+<h1 id="ffff">Dryers</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<ion-item>
+<h6 id="gggg"></h6>
+    <ion-label>Slected</ion-label>
+  <ion-select [(ngModel)]="dryer">
+    <ion-option value=0>0</ion-option>
+    <ion-option value=1>1</ion-option>
+    <ion-option value=2>2</ion-option>
+    <ion-option value=3>3</ion-option>
+    <ion-option value=4>4</ion-option>
+    <ion-option value=5>5</ion-option>
+    </ion-select>
+</ion-item>
+<br>
+<br>
+
+<button id="ffgg" ion-button block (click)="load()">Checkout</button>
+<!-- <h5>select machine</h5> -->
+<!-- <ion-grid>
   <ion-row>
     <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
     <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
@@ -59,5 +99,5 @@
     <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
 </ion-row>
   <div class="rowBorder"></div>
-</ion-grid>
+</ion-grid> -->
 </ion-content>
