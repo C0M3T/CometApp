@@ -1,17 +1,15 @@
 import { Component, ViewChild ,ElementRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { MachinePage} from '../machine/machine';
+import { ReservePage} from '../reserve/reserve';
 import { SettingsPage} from '../settings/settings';
 import { Geolocation ,GeolocationOptions ,Geoposition ,PositionError } from '@ionic-native/geolocation';
+import { App, MenuController } from 'ionic-angular';
 
 declare var google;
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
 })
-
-
-  
 export class AboutPage {
 options : GeolocationOptions;
 currentPos : Geoposition;
@@ -24,7 +22,7 @@ map: any;
   }
   
     ionViewDidLoad(){ 
-    setTimeout(()=> {
+     setTimeout(()=> {
       this.splash =false;
     },2000);
     this.getUserPosition();
@@ -92,7 +90,7 @@ map: any;
    
     console.log("Selected Item", item.title.any);
     
-    this.navCtrl.push(MachinePage, item)
+    this.navCtrl.push(ReservePage, item)
   }
   
 load1(){
@@ -121,7 +119,7 @@ load1(){
         }); 
     });}
 load(){
-   	this.navCtrl.push(MachinePage, {
+   	this.navCtrl.push(ReservePage, {
    		val:'anishnirmal'
    	})
 }

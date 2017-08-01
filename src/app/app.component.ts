@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InfoPage} from '../pages/info/info';
-import { AboutPage } from '../pages/about/about';
+import { TimePage } from '../pages/time/time';
 import{ ContactPage} from '../pages/contact/contact';
 import { MenuController } from 'ionic-angular';
 @Component({
@@ -11,7 +11,7 @@ import { MenuController } from 'ionic-angular';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = AboutPage;
+  rootPage:any = TimePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public menuCtrl: MenuController) {
     platform.ready().then(() => {

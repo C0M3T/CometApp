@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TodoServiceProvider } from '../../providers/todo-service/todo-service';
-import { TimePage} from '../time/time';
+import { AboutPage} from '../about/about';
 import { Observable } from "rxjs/Observable";
 /**
  * Generated class for the MachinePage page.
@@ -73,7 +73,7 @@ export class MachinePage {
     
   }
 load(){
-   	this.navCtrl.push(TimePage, {
+   	this.navCtrl.push(AboutPage, {
    		val:'anishnirmal'
    	})
    }

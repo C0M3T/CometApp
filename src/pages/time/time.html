@@ -4,13 +4,33 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+ <div style= " background-image:url('assets/img/oo.png')"></div> 
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'"  style= " background-image:url('assets/img/oo.png')"> 
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img id="ss" src="assets/img/Comet.png">
+     <div><h1 id="dddd" style="font-family:'Roboto'"><i>Comet</i></h1> 
+      <div  id="kkkk"><i>Reserve Your Laundry Machine</i></div> </div>
+    <div class="Aligner-item Aligner-item--bottom"></div>
+    
+  </div>
+</div> 
 <ion-header>
-  <ion-navbar color="main">
-    <button ion-button secondary (click)="load()" class="start">start</button> 
-   </ion-navbar> 
+   <ion-navbar color="main">
+  <!-- <ion-buttons start> -->
+    <button ion-button icon-only menuToggle>
+ <ion-icon name="menu"></ion-icon>
+  </button> 
+<button ion-button secondary (click)="load()" class="start">start</button> 
+ <!-- </ion-buttons> -->
+</ion-navbar>
 </ion-header>
+ 
+    
+  
+
 <ion-content>
-  <ion-slides class="wrapper" loop="true"  slidesPerView="1">  
+  <!-- <ion-slides class="wrapper" loop="true"  slidesPerView="1">  
   <ion-slide style="background-color:#e0e0e0">
       <img id="begin" src="assets/img/bluewasher.png">
   
@@ -28,7 +48,7 @@
   <ion-label id="bbb">End Time</ion-label>
   <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myEnd"></ion-datetime>
 </ion-item>  -->
-  </ion-slide>
+  <!-- </ion-slide>
 
   <ion-slide style="background-color: #E0E0E0">
       <img id="begin" src="assets/img/bluewasher.png">
@@ -38,7 +58,7 @@
     <br>
     <br>
     <br>
-    <br>
+    <br> -->
     <!-- <ion-item>
   <ion-label id="aaa">Start Time</ion-label>
   <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myStart2"></ion-datetime>
@@ -47,7 +67,7 @@
   <ion-label id="bbb">End Time</ion-label>
   <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myEnd2"></ion-datetime>
 </ion-item>  -->
-  </ion-slide>
+   <!-- </ion-slide>
 
   <ion-slide  style="background-color: #E0E0E0">
     <img id="begin" src="assets/img/bluewasher.png">
@@ -56,8 +76,8 @@
     <br>
     <br>
     <br>
-    <br>
-    <!-- <ion-item>
+    <br> -->
+    <!-- <ion-item> 
   <ion-label id="aaa">Start Time</ion-label>
   <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myStart3"></ion-datetime>
 </ion-item>
@@ -66,26 +86,46 @@
   <ion-label id="bbb">End Time</ion-label>
   <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myEnd3"></ion-datetime>
 </ion-item>  -->
-  </ion-slide>
+  <!-- </ion-slide>
   
 
-</ion-slides>
+</ion-slides> --> 
+
 
 <br>
 <br>
-  <ion-item>  
+<br>
+<br>
+<br>
+  <ion-item id="okok">  
   <ion-label ion-button round outline id="start">START TIME</ion-label>
-    <ion-datetime displayFormat=" MMM DD h:mm a" [(ngModel)]="myStart"></ion-datetime>  
+    <ion-datetime displayFormat=" MMM DD YYYY" [(ngModel)]="myStart"></ion-datetime>  
  </ion-item> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-item id="okokok">  
+  <ion-label ion-button round outline id="start">START TIME</ion-label>
+    <ion-datetime displayFormat="h:mm a" [(ngModel)]="myStart"></ion-datetime>  
+ </ion-item>
  <!-- <ion-item> -->
    <br>
-    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 <ion-item>
        <ion-label>Type of cycle setting</ion-label>
   <ion-select  [(ngModel)]="dryer">
-    <ion-option  value=s>7-8lbs</ion-option>
-    <ion-option  value=m>12-15lbs</ion-option>
-    <ion-option  value=l>16-18lbs</ion-option>
+    <ion-option  value=s>1 load</ion-option>
+    <ion-option  value=m>2 loads</ion-option>
+    <ion-option  value=l>3 loads</ion-option>
+    <ion-option  value=xl>4 loads</ion-option>
+    <ion-option  value=xxl>8 loads</ion-option>
      </ion-select>
 </ion-item>
  

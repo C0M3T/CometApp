@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {ReservePage} from '../reserve/reserve';
+import {MachinePage} from '../machine/machine';
 /**
  * Generated class for the TimePage page.
  *
@@ -11,10 +11,11 @@ import {ReservePage} from '../reserve/reserve';
 @Component({
   selector: 'page-time',
   templateUrl: 'time.html',
+  
 })
 
 export class TimePage { 
-  
+  splash=true; 
   slides = [
     {
       image: "../../assets/img/bluewasher.png"    
@@ -32,10 +33,13 @@ export class TimePage {
   }
 
   ionViewDidLoad() {
+     setTimeout(()=> {
+      this.splash =false;
+    },2000);
     console.log('ionViewDidLoad TimePage');
   }
 load(){
-   	this.navCtrl.push(ReservePage, {
+   	this.navCtrl.push(MachinePage, {
    		val:'anishnirmal'
    	})
    }

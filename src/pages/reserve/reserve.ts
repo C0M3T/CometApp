@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {SettingsPage} from '../settings/settings';
+import {InfoPage} from '../info/info';
 /**
  * Generated class for the ReservePage page.
  *
@@ -20,8 +20,8 @@ export class ReservePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReservePage');
   }
-load(){
-   	this.navCtrl.push(SettingsPage, {
+load88(){
+   	this.navCtrl.push(InfoPage, {
    		val:'anishnirmal'
    	})
    }
